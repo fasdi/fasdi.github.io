@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #e8f4fc;
+  color: #2a3f5f;
+}
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0,79,149,0.1);
+}
+h1 {
+  text-align: center;
+  color: #2a3f5f;
+  border-bottom: 3px solid #2a3f5f;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.price-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+.price-table td {
+  padding: 1.5rem;
+  border: 2px solid #e8f4fc;
+  position: relative;
+}
+.price-tag {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a3f5f;
+  background: linear-gradient(45deg, #e8f4fc 50%, transparent 50%);
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+.tier-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #1a2c4d;
+}
+.decoration {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.2;
+}
+.custom-tier {
+  background: #2a3f5f;
+  color: white !important;
+}
+.custom-tier .price-tag {
+  color: white;
+  background: linear-gradient(45deg, rgba(255,255,255,0.2) 50%, transparent 50%);
+}
+.note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e8f4fc;
+  border-left: 4px solid #2a3f5f;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>角色定制价位表</h1>
+  
+  <table class="price-table">
+    <tr>
+      <td>
+        <div class="decoration">◆</div>
+        <span class="price-tag">¥30</span>
+        <div class="tier-title">基础技能包</div>
+        <ul>
+          <li>纯技能设计</li>
+          <li>无特殊机制</li>
+          <li>标准动作模组</li>
+        </ul>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="decoration">◇</div>
+        <span class="price-tag">¥40</span>
+        <div class="tier-title">人型基础</div>
+        <ul>
+          <li>单机制设计</li>
+          <li>基础人型角色</li>
+          <li>无延展机制</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="decoration">◈</div>
+        <span class="price-tag">¥50</span>
+        <div class="tier-title">进阶定制</div>
+        <ul>
+          <li>单机制+延展设计</li>
+          <li>角色模型修改</li>
+          <li>专属动作调整</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="decoration">★</div>
+        <span class="price-tag">¥60</span>
+        <div class="tier-title">高阶设计</div>
+        <ul>
+          <li>参考维吉里乌斯/堂吉诃德制作量</li>
+          <li>复合机制设计</li>
+          <li>专属模型调整</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="custom-tier">
+        <div class="decoration">✦</div>
+        <span class="price-tag">定制报价</span>
+        <div class="tier-title">旗舰定制</div>
+        <ul>
+          <li>多机制复合系统</li>
+          <li>大模型改造</li>
+          <li>高动作量设计</li>
+          <li>专属特效制作</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <div class="note">
+    * 最终价格可能根据实际制作复杂度调整<br>
+    * 定制档位需提供详细需求文档<br>
+    * 参考案例视频可联系获取
+  </div>
+</div>
+</body>
+</html>
